@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering League</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script src="script.js"></script>
+<script>team_name = "Engineering League"</script>
+<script type="module" src="communication.js"></script>
+<div class = "background">
+    <h1 class = "title">The Engineering League @ </h1><h1 class = "UCLA"><i><b>UCLA</b></i></h1>
+  </div>
+  
+</div>
+<p class = "imp"><br/>
+<img src="/images/hacklogo.jpg" alt="logo" width="200" height="200" class = "center"/>
+<br/>
+</p>
+
+
+<div class = "mc"><h2><b>MISSION CONTROL:</b> </h2>
+  <i>Temperature: </i><b><span id="temp"></span><sup>o</sup>C </b>
+  <br/><br/><i>Humidity: </i><b><span id="humidity"></span> %</b>
+  <br/><br/>Gas: </i><b><span id="gasdetect"></span></b>
+  <br/><br/>Distance: </i><b><span id="ultrasonic"></span>cm</b></div>
+</head>
+<br/>
+
+<div class = "wrapper">
+  <h2>Table of Contents</h2>
+</div>
+
+<div class="hyperlink">
+  
+  <br/>
+  <a href="#about us"> About Us</a>&emsp;
+  <a href="#project overview"> Project Overview</a>&emsp;
+  <a href = "#project progress"> Project Progress</a>&emsp;
+  <a href = "#Gauntlet Breakdown"> About the "Godlet"</a>&emsp;
+  <a href = "#Code Breakdown">Code Breakdown</a>&emsp;
+  <a href = "#CAD Breakdown">CAD Breakdown</a>&emsp;
+  <a href = "#problems/solution">Encounters/Solutions</a>&emsp;
+  <a href = "#gallery">Gallery</a>&emsp;
+
+</div>
+
+<br/><br/><br/>
+
+<div class="wrapper">
+  <h2 id="about us" class = "sections">About Us</h2>
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+      <label for="tab-1" class="tab-label">June Lee</label>
+      <div class="tab-content">Hello! My name is June Lee and I am an incoming Bruin for the UCLA Aerospace Engineering department! I was born in South Korea and immigrated to the U.S. in 2011. I was also a former Cadet at the United States Military Academy. I like to work out, play soccer, and try new restaurants with my friends on my downtime. I have some personal projects I'm working on too! Excited to put my skills to the test.</br></br>June is leading the ESP32 software, website design, and assisting with CAD and circuitry.</div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+      <label for="tab-2" class="tab-label">Gabriel Ramos</label>
+      <div class="tab-content">Hi Bruins!<br/>
+        My name is Gabriel Ramos, 20 years old and a deaf student from El Camino College. I’m pursuing my bachelors in Electrical Engineering and eventually I hope to work at Northrop Grumman or any engineering company. I started learning how to be familiar with circuits and resistors by participating in EE workshops and UCLA basic training/HAcK composition. </br></br> Gabriel is leading circuitry for this project.  </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+      <label for="tab-3" class="tab-label">Amelie Salas</label>
+      <div class="tab-content">Hi! My name is Amelie Salas! I am currently working towards a bachelors in Mechanical Engineering at El Camino College. After my time there I hope to work in the renewable energy field. In my free time I like going to concerts and being able to see live events. I also enjoy taking part of the Society of Women Engineering at my school.</br> </br>Amelie is leading structure and aesthetics design for this project.</div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+      <label for="tab-4" class="tab-label">About The Team</label>
+      <div class="tab-content">We are a group of incoming second, third years at different institutions. With varying skill levels, we've actively participated in the UCLA eTransfer Basic Training courses and practiced on our own to get to where we are today! Thank you for stopping to read a little bit about us and we hope that you find our product appealing!</div>
+      </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
+      <label for="tab-5" class="tab-label">Solution/Goals</label>
+      <div class="tab-content">The situation we've been provided with is that "there was a massive earthquake that struck has struck the UCLA campus. Bruin engineers have been trapped within Boelter Hall for a couple of days and they need your help. Be aware that there will be gas leaks, dark rooms, broken windows, pipes that have burst, and maybe enemies lurking in the shadows." We plan on solving this issue through fabricating a gauntlet with a ring LED for visibility, OLED for data collection, ultrasonic sensor for distance awareness in poor visibility, temperature sensor to gauge the heat, and a hazardous gas detector to well, detect hazardous gas. </div>
+      </div>
+  </div>
+
+</div>
+<body>
+<br/>
+
+
+<div class="wrapper">
+  <h2 id="project overview" class = "sections">Project Overview</h2>
+  <p>When our team first came together, we all immediately agreed we wanted our gauntlet designed into two parts. This meant that the wrist could be allowed to move freely. We also wanted a design that was flexible according to how much progress we could accomplish in our allotted time. We focused on one sensor at a time, but if we could fit one more into our time frame, then on our gauntlet we would have the space and flexibility to do so. We also knew that in our final product, we wanted the sensors and other components to be on the hand separate from the battery and breadboard which would be placed on the arm portion.</p>
+
+</div>
+
+<div class="wrapper">
+  <h2 id = "project progress" class = "sections">Project Progress</h2>
+  <h3>Day 1:</h3>
+  <img src="/images/progress.jpg" alt="PIC" width="800" height="400" class = "center"/>
+  <img src="/images/d1circuit.jpg" alt="PIC" width="400" height="400" class = "center"/>
+  <p>
+    Today from 10:30-17:30, we worked in the Mong Auditorium (180 Engineering VI, UCLA), then moved to our MakerSpace (1805 Boelter Hall, UCLA) from 18:20-22:00. 
+    We focused on figuring out our coding to connect the ESP32 to live stream the data to this website hosted on the local server. 
+    We were able to complete the entire integration of the ESP32 on to connecting it to the web and sending data recieved from its sensors. 
+    We wired the ultrasonic sensor, hazardous gas temperature sensor, OLED screen, temperature and humidity sensor, and begun working on servo integration. 
+    For our CAD drafting, we were able to obtain the specification of the hero's arm and test print/iterate and refabricate the design for the snap fit joints that we plan on using throughout the model. We almost completed soldering the ring LED as well. 
+  </p>
+</div>
+</br>
+<div class="wrapper"><p>===================================================================================</p></div>
+
+<div class="wrapper">
+  <h3>Day 2:</h3>
+  <img src="/images/d2circuitbox.jpg" alt="PIC" width="600" height="400" class = "center"/>
+  <img src="/images/d2fincloseup.jpg" alt="PIC" width="400" height="400" class = "center"/>
+<img src="/images/d2wrist.jpg" alt="PIC" width="400" height="400" class = "center"/>
+
+  <p>
+    Day 2 started off strong, with all the CAD drafting finishing at 12:00-12:30. 
+    We finished our draft for the hand portion and the wrist portion. 
+    Concurrently, the all sensors were integrated into the board, even the button that extends the temperature probe and the button that turns on the ring LED.  
+    The coding for all the sensors were completed around 13:00. 
+    We were initially set back by how long the print for the hand piece would take (9.5 hours!), but the print completed on time and was able to be tested before the end-of-day.
+    The wrist part also turned out great, although there was a little error in the printing process, where the supports molded into one of the wrist guard.
+  </p>
+  <p>
+    TL/DR: 
+  </br>
+    + Circuits completely finished
+  </br>
+    + ESP32 and sensor coding completed
+  </br>
+    + 3D print completed for all parts
+  </br>
+    + Circuits organized/labeled on hand diagram
+  </br>
+    + Circuits box completed and glued
+  </br>
+    + Probe design completed and attached to servo
+  </br>
+    + Integrated buzzer
+  </br>
+</br>
+    - No longer using snap fit
+  </br>
+    - Some fabricating work to do (gridning away corners for gauntlet)
+  </p>
+</div>
+<div class="wrapper"><p>===================================================================================</p></div>
+<div class="wrapper">
+  <h3>Day 3:</h3>
+<img src="/images/gaunt5.jpg" alt="PIC" width="400" height="400" class = "center"/>
+<img src="/images/teampic.jpg" alt="PIC" width="400" height="500" class = "center"/>
+
+  
+  <p>
+     The final product was built today. We worked on integrating the sensors on to the actual product itself using powertools. 
+     We attached all netwprks, including: ultrasonic sensor, buzzer, temperature & humidity sensor, servo, two buttons, LED ring light, OLED screen, and hazardous gas detector. 
+     Today, upon arrival, we realized that the board was broken, possibly due to water damage. 
+     We quickly realized that the ESP32 was not recieveing any power through the board, so we rewired everything.
+     The product turned out great! WE are now with a full product pictured.
+  </p>
+  <p>
+    TL/DR: 
+  </br>
+    + Entire product finished
+  </br>
+  <br>
+    + Assembly Complete
+</br>
+    - Initial Board Shortage
+  </br>
+    - Tight fit
+  </p>
+</div>
+
+<div class="wrapper">
+  <h2 id = "Gauntlet Breakdown" class = "sections">"Godlet" Breakdown</h2>
+    <h3>Sensors:</h3>
+    <p>
+
+      As our hero embarks on their mission to save the Bruin engineers, our team chose each sensor specifically to help tackle the challenges 
+      they face ahead. As they make their way through the dark rooms, the ring LED placed at the palm of the gauntlet lights their path for easier 
+      navigation. When they unknowingly stumble onto a room that is filled with gas leaks, the hazardous gas detection will indicate the levels of 
+      intoxicating gas. The temperature and humidity sensor help with detecting if a fire is nearby as it lets the hero know the amount of water in
+       the air and an increase in temperature levels. This is mounted onto a micro servo that extends from the gauntlet to allow distance between the 
+       danger and the hero. There is also a buzzer that sounds off to the hero when the levels from the temperature and hazardous gas sensor become
+        too great. When the hero finally makes their way to try to locate the engineers, the ultrasonic sensor is used to locate how far away they are, 
+        if even present at all. With all of these sensors, and their readings easily broadcasted on the OLED screen, the hero can successfully complete 
+        their mission to save the Bruin engineers.
+
+    </p>
+  </div>
+
+ <div class="wrapper">
+  <h2 id = "Code Breakdown" class = "sections">Code Breakdown</h2>
+    <h3>Code:</h3>
+    <p>
+      In our code, the very first problem we wanted to tackle was to connect the ESP32 to Wifi and be able to transmit our sensor readings onto the website.
+       After establishing the connection, the next step was to set up each of our sensors. To each one we had the sensor read the incoming data and then 
+       display it on the OLED screen on our gauntlet and transmit it to mission control. After doing this generally for each sensor and component we were 
+       able to specifically code extra items into our design plan. We included two buttons. One to turn the ring LED on and off at will, while the other was 
+       to extend the temperature and humidity sensor that is mounted on the micro servo at will. We were also able to set up the buzzer, so that if a reading 
+       from the temperature or gas sensor was read at a level deemed “too dangerous” then the buzzer would sound off and alert the hero. Also, the OLED, when first
+        booting up, displays our team logo, and then afterwards displays the current readings from the sensors.
+        Among the issues in the coding, wrong labels and misspellings were the most common. After searching through the code and fixing small errors in typing, or 
+        finding keywords that did not match, the code ran through and was able to carry out. Issues with libraries were also something we faced. As certain functions 
+        were not integrating into the code well, the whole idea was ultimately scrapped. As for circuits, placing wires into the wrong holes in the breadboard were common, 
+        however after looking again for a second time, the mistakes were eventually found and fixed until everything ran smoothly.
+
+
+
+
+    </p>
+  </div>
+
+<div class="wrapper">
+<h2 id = "CAD Breakdown" class = "sections">CAD Breakdown</h2>
+<img src="/images/snapfitunuse.jpg" alt="PIC" width="600" height="400" class = "center"/>
+<img src="/images/gaunt7.jpg" alt="PIC" width="600" height="400" class = "center"/>
+
+ <p>
+  In the CAD process, the initial idea was to have a two-part gauntlet to allow for more wrist mobility. The first part is a wrist guard to hold the breadboard and battery. 
+  The second part being an enclosure for the hand. On the hand, the palm side holds the ring LED and hazardous gas sensor, while the back of the hand holds the rest of the sensors 
+  including the temperature and humidity sensor that is mounted on the micro servo. The initial idea was to individually encase all of our sensors, breadboard and battery in boxes 
+  on the gauntlet itself, and enclose them with lids that had snap fit hinges. 
+While the first iteration of the gauntlet had minor hiccups, only one side of the wrist guard needed to be reprinted because it had accidentally merged with the other when printing. 
+Other than that the body itself came out fine.
+The enclosures for the sensors was a different story. As time kept going and multiple iterations of the tes6bt print hinges failed, the idea was scrapped as a whole in favor of 
+something more time efficient and reliable. The next idea was to enclose our breadboard and battery in a laser cut box that was glued together and mounted on the wrist guard. The box
+ itself went through multiple iterations as the dimensions of the wires were not initially taken into account, nor the room needed for the wire connecting the ESP32 to the portable
+  battery. In the second laser cut, the box had a greater height, and specific cutouts were put in place to allow the wires to go where they needed. On the sides of the box, cutouts
+   were also included for the straps of the velcro to further secure it all together. 
+On the hand itself, the snap hinges were also not going to work out in this case scenario. So the next best idea was to drill into the hand and secure the pieces of equipment that
+ way. This means that on the hand, each sensor is flush with the outside. On the underside, the wires are secured in place with electrical tape and fed through the holes made into
+  the hand itself.
+
+
+
+ </p>
+</div>
+
+<div class="wrapper">
+  <h2 id = "problems/solution" class = "sections">Encounters/Solutions</h2>
+<img src="/images/circ fail.jpg" alt="PIC" width="400" height="400" class = "center"/>
+
+  <p>
+    In our time working on the gauntlet, many problems ensued. Some of which were environmental. Above our work table are leaky pipes and as water droplets kept falling, one of 
+    them landed in our breadboard and short circuited it. When the sensors were not reading correctly, at first we thought maybe it was an issue of wiring or maybe even code. 
+    However after double checking the circuit itself and reviewing the code, there was nothing as to why everything stopped working all of a sudden. After going through the 
+    checklist and then remembering what had happened with the water earlier, the issue became clear that we needed to rewire everything onto a different breadboard. Then we were 
+    able to test run our components and make sure that again, everything was running as it should.
+
+
+
+  </p>
+  </div>
+
+<div class="wrapper">
+  <h2 id = "gallery" class = "sections">Gallery</h2>
+  <div class="row">
+    <div class="column">
+      <img src="/images/hacklogo.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gabeinternet.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gabewes.jpg" onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/hardwork.jpg" onclick="galleryfunc(this);">
+    </div>
+    </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/d2fincloseup1.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/dp.jpg"onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/Juneg.jpg" onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/cool.jpg"  onclick="galleryfunc(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/purpleman.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/teampic.jpg"onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/papa.jpg" onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/working.jpg"  onclick="galleryfunc(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/gaunt1.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gaunt2.jpg"onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gaunt3.jpg" onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gaunt4.jpg"  onclick="galleryfunc(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/gaunt5.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gaunt6.jpg"onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/gaunt7.jpg" onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/intg.jpg"  onclick="galleryfunc(this);">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/images/junegoof.jpg"  onclick="galleryfunc(this);">
+    </div>
+    <div class="column">
+      <img src="/images/fincir.jpg"onclick="galleryfunc(this);">
+    </div>
+
+    </div>
+  </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
+
+</body>
+<div class="bcenter">
+  <a href ="https://samueli.ucla.edu/" button class="button button2">UCLA Samueli</button>
+    <a href ="https://www.elcamino.edu/" button class="button button1">El Calmino College</button>
+</div>
